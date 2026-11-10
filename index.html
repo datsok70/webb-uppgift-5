@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meny</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: crimson;
+            color: white;
+            border-radius: 10ex;
+            border: 1px solid blue;
+            justify-content: space-between;
+            padding: 0.8rem;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        a.nav-link,
+        a.nav-link:visited {
+            color: black;
+            text-decoration: none;
+            text-underline-offset: 0.2rem;
+        }
+
+        a.nav-link:hover {
+            text-underline-position: under;
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        a.nav-link:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>
+            Semantiska element
+        </span>
+
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="index.html">Hem</a></li>
+                <li><a class="nav-link" href="element/element.html">Element</a></li>
+                <li><a class="nav-link" href="/about/about.html">Om mig</a></li>
+                <li><a class="nav-link" href="/services/services.html">Hjälp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="css">
+            <h2>CSS-stilar jag har lärt mig</h2>
+
+            <ul class="list">
+                <li>display - bestämmer hur ett element visas på sidan.</li>
+                <li>color - ändrar färgen på texten</li>
+                <li>background-color - ändrar bakgrundsfärgen</li>
+                <li>font-size - ändrar storleken på texten</li>
+                <li>font-weight - bestämmer hur tjock texten ska vara.</li>
+                <li>border - lägger till en ram runt ett element.</li>
+                <li>border-radius - gör hörnen på ett element rundare.</li>
+                <li>padding - skapar utrymme innanför ett elements kant</li>
+                <li>margin - skapar utrymme utanför ett element.</li>
+                <li>gap - bestämmer avståndet mellan element</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Olika sorters länkar</h2>
+
+            <p><a href="element.html">Relativ länk</a></p>
+
+            <p><a href="https://www.google.com">Absolut länk</a></p>
+
+            <p><a href="#css">Gå till CSS-stilar</a></p>
+
+            <section>
+                <h1>Heading 1</h1>
+                <p>hej</p>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </section>
+
+            <section>
+                <p>hej</p>
+            </section>
+
+            <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+                    alt="Klicka för att besöka Unsplash" class="klickbar-bild">
+            </a>
+
+            <section id="youtube">
+                <h2>YouTube-video</h2>
+
+                <p>Här kan du titta på min YouTube-video.</p>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/hWjIHhIe8K8" title="YouTube-video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
